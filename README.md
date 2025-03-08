@@ -80,7 +80,48 @@ There is high likelihood that a customer who makes more than 1 customer service 
         <p><em>International Plan vs Churn Rate</em></p>
     </div>
 
-The chan probability for customers with international plan appears high owing to the fact that for cutomers who have international plan, the ratio of churn to not churn is almost 1.
+The churn probability for customers with international plan appears high owing to the fact that for cutomers who have international plan, the ratio of churn to not churn is almost 1.
+
+ <div align="center">
+        <img src="pictures/call_time_description.png" alt="call_time_description" width="800">
+        <p><em>Call Time Description</em></p>
+    </div>
+
+Generally, the customers appear to have slightly longer calls in the evenings and at night with repect to day time calls.
+
+
+ <div align="center">
+        <img src="pictures/number_of_calls_description.png" alt="number_of_calls_description." width="800">
+        <p><em>Number of Calls Description</em></p>
+    </div>
+
+The average number of calls by customers during the day, evening and at night is fairly balanced.
+
+ <div align="center">
+        <img src="pictures/call_charges_description.png" alt="call_charges_description" width="800">
+        <p><em>Call Charges Description</em></p>
+    </div>
+
+Despite call lengths being shorter during the day, corresponding call charges are much higher during the day. This must mean that the call rates for evening and night are much lower.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # **Conclusion**
 
 1. **Genre Focus:**
