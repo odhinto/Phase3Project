@@ -242,35 +242,12 @@ The performance metrics improved to:
 * **F1-score**: 0.807018
 
 
-# **Conclusion**
+## Model evaluation
 
-1. **Genre Focus:**
-   - Focus on highly rated genres 
-
-2. **Director and Writer Partnerships:**
-   - Invest in partnerships with proven directors and writers to enhance the likelihood of success.
-
-3. **Casting Strategy:**
-   - Include at least one A-list actor in high-budget projects while ensuring strong scripts and storytelling to retain audience satisfaction.
-
-5. **Budget Allocation:**
-   - Focus on low- to mid-budget films with a clear emphasis on maximizing profit margins.
-
-6. **Long-Term Strategy:**
-   - Continuously analyze audience preferences and emerging trends to adapt to shifting market demands.
-
+The best performing model was the tuned Random forest model with 98.9 % recall and accuracy = ....? The best paramaters after tuning for the best model is min_sample split = 4. etc
 
     
 # **Recommendation**
-These recommendations provide a roadmap for achieving consistent profitability and success in the competitive movie industry.   Among the top 30 most expensive movies, Family, Fantasy, Musicals yield the highest profitability at relatively low budget.
 
- <div align="center">
-        <img src="pictures/Average Production Budget vs Average Profitability by Genre.png" alt="new image" width="800">
-        <p><em>Average Production Budget vs Average Profitability by Genre</em></p>
-    </div>
-
-
-For a start, our company should focus on producing this genre.
-
-
-Average Production Budget vs Average Profitability by Genre
+* The recall is still a bit low. Other classification techniques e.g. XGBoost Classification could be attempted to yield better model performance.
+* More descriptive features could improve model performance e.g. **Customer Service Calls Reasons** or **Subscription Tariff**
