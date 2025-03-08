@@ -104,9 +104,12 @@ The average number of calls by customers during the day, evening and at night is
 
 Despite call lengths being shorter during the day, corresponding call charges are much higher during the day. This must mean that the call rates for evening and night are much lower.
 
+ <div align="center">
+        <img src="pictures/AverageCallTimevsTypeofCall.png" alt="AverageCallTimevsTypeofCall" width="800">
+        <p><em>Average Call Time vs TypeofCall</em></p>
+    </div>
 
-
-
+On average, the number of calls a customer makes per day is inversely proportional to the average duration of calls the customer makes
 
 
 
