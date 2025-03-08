@@ -158,6 +158,66 @@ Feature Engineering was used to try and make better sense of the data. The follo
 
 The correlation matrix for the original features is as follows as shown.
 
+# Data Preprocessing
+Categorical variables were encoded in preparation for modeling
+
+# Modeling
+
+Using a functional approach, we can check model evaluation performance for various classification techniques to find the most optimal model for predicting churn. Moreover, we can implement different features combinations to find the optimal features that best predict churn.
+
+The following classification modeling techniques were randomly considered:
+
+* Logistic Regression
+* Random Forest
+* Support Vector Machine
+* Decision Tree
+* K Nearest Neighbour
+* AdaBoost Regression
+* Ridge Regression
+* Stochastic Gradient Descent
+
+To also explore the effect of different feature combinations in the model performance, the following 3 dataframes were used:
+* **Baseline**: Here, the data used to train and evaluate the models only have the **original fetaures**
+* **Engineered**: Here, the data used to train and evaluate the models have both the **original features and all the engineered features**
+* **Engineered Only**: Here, the data used to train and evaluate the models have **all the engineered features, but some of the original features have been removed**
+
+This yielded the following performance metrics:
+
+<div align="center">
+        <img src="pictures/accuracy.png" alt="accuracy" width="800">
+        <p><em>Performance Metrics Sorted In Descending Order of Accracy</em></p>
+    </div>
+
+The baseline Random Forest Model produced the highest Accuracy results
+
+<div align="center">
+        <img src="pictures/precision.png" alt="precision" width="800">
+        <p><em>Performance Metrics Sorted In Descending Order of Precision</em></p>
+    </div>
+
+The Engineered Random Forest Model produced the highest Precision results
+
+<div align="center">
+        <img src="pictures/recall.png" alt="recall" width="800">
+        <p><em>Performance Metrics Sorted In Descending Order of Recall</em></p>
+    </div>
+
+The Engineered-Only Decision Tree Model produced the highest Recall results
+
+
+<div align="center">
+        <img src="pictures/fi_score.png" alt="fi_score" width="800">
+        <p><em>Performance Metrics Sorted In Descending Order of F1 Score</em></p>
+    </div>
+
+The Baseline Random Forest Model produced the highest Recall results
+
+<div align="center">
+        <img src="pictures/auc_roc.png" alt="auc_roc" width="800">
+        <p><em>Performance Metrics Sorted In Descending Order of AUC_ROC Score</em></p>
+    </div>
+
+The Baseline Random Forest Model produced the highest AUC_ROC results
 # **Conclusion**
 
 1. **Genre Focus:**
