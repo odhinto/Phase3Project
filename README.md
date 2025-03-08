@@ -61,17 +61,26 @@ Python, Tableau and MS Excel were used to explore and gather insights from the d
 The customers appear to be evenly distributed across all the states in USA.
 
   <div align="center">
-        <img src="pictures/Account_Length_Distribution.png" alt="Account_Length_distribution" width="400">
+        <img src="pictures/Account_Length_Distribution.png" alt="Account_Length_distribution" width="800">
         <p><em>Account Length Distribution in Days</em></p>
     </div>
 
- There appears to be normal distribution of the account length 
+There appears to be normal distribution of the account length 
 
  <div align="center">
         <img src="pictures/Customer_service_calls.png" alt="Customer_service_calls" width="100">
         <p><em>Custome Service Calls</em></p>
     </div>
 
+There is high likelihood that a customer who makes more than 1 customer service call will churn.
+
+
+ <div align="center">
+        <img src="pictures/International_Plan_vs_Churn_Rate.png" alt="International_Plan_vs_Churn_Rate" width="100">
+        <p><em>International Plan vs Churn Rate</em></p>
+    </div>
+
+The chan probability for customers with international plan appears high owing to the fact that for cutomers who have international plan, the ratio of churn to not churn is almost 1.
 # **Conclusion**
 
 1. **Genre Focus:**
