@@ -61,7 +61,7 @@ Python, Tableau and MS Excel were used to explore and gather insights from the d
 The customers appear to be evenly distributed across all the states in USA.
 
   <div align="center">
-        <img src="pictures/Account_Length_distribution.png" alt="Account_Length_distribution" width="400">
+        <img src="pictures/Account_Length_Distribution.png" alt="Account_Length_distribution" width="400">
         <p><em>Account Length Distribution in Days</em></p>
     </div>
 
