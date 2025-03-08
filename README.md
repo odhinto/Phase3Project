@@ -6,6 +6,7 @@ Tableau Dashboard: [Click to Open the Tableau Dashboard](https://public.tableau.
 
 
 # **Data Understanding**
+## **Problem Statement**
 
 Like most telecommunication companies, customer retention remains a critical challenge for **SyriaTel**. This is because as acquiring new customers is often more expensive than keeping existing ones. SyriaTel is experiencing customer churn where users discontinue their service. Identifying the patterns and factors that drive churn can help the company take proactive measures to reduce customer loss, enhance loyalty, and increase revenue.
 
@@ -17,6 +18,7 @@ The **primary objective** of this exercise is to leverage historical customer da
 ## **Dataset Overview**
 
 The dataset has a mix of categorical data and numerical data. These can be summarized as follows:
+
 **Customer Information**
 * state - The U.S. state where the customer resides.
 * account length - The number of days the customer has had an active account with SyriaTel.
@@ -42,47 +44,20 @@ The dataset has a mix of categorical data and numerical data. These can be summa
 * total intl calls - The total number of international calls made.
 * total intl charge - The total charges incurred for international calls.
 
-
 The task is to use these features to accurately predict customer churn.
 
-### Data Understanding
-
-<div align="center">
-    <img src="pictures/movie_data_erd.jpeg" alt="Database Schema" width="800">
-    <p><em>Movie Database Schema</em></p>
-</div>
-
-The movie database contains the following tables with shown columns:
-
-*   **principals**: The principals table details main people (using their person_id)that were involved with different movies (using the movie_id) and the capacities in which they were involved e.g. director, actor, producer etc. There could be a relationship between these people and the success of the movie in the box office.
-
-    ![image](https://github.com/user-attachments/assets/ffd68c86-7102-4032-860d-85dd3800fab2)
-*   **persons**: The persons table details the name, birth year, death year and primary professions of the various people using their person_id. There could be a relationship between the people involved in a movie and the success of the movie in the box office.
-
-    ![image](https://github.com/user-attachments/assets/66ac232a-c0fb-4b79-a8da-59e75efc6ced)
-*   **known_for**: Known_for table details the various movies different people are known for by person_id and movie_id.
-
-    ![image](https://github.com/user-attachments/assets/5bebda41-1b18-483f-ac93-8002a63c8226)
-*   **directors**: Directors table details the various movies and the people they are known for by movie_id and person_id. There could be a relationship between the directors of a movie and the success of the movie in the box office.
-
-    ![image](https://github.com/user-attachments/assets/a30f8dde-24ef-44b3-89a5-9a6da837a707)
-
-
-*   **writers**: Writers table details the various movies and their pewriters by movie_id and person_id. There could be a relationship between the writers of a movie and the success of the movie in the box office.
-
-    ![image](https://github.com/user-attachments/assets/49ace174-b171-4182-83b1-e8b2e8244d5a)
-*   **movie_basics**: Movie_basics table details the various movie titles, the year they were released, the run-time minutes and the various genres (there may be need for feature engineering around this aspect). There could be a relationship between these parameters and the success of a movie in the box office.
-![image](https://github.com/user-attachments/assets/b491a681-e270-4208-a14c-83f8ddce34b8)
-*   **movie_ratings**: This table shows the average rating for each movie by movie_id and also the number of votes it received (which could give insight into how many people watched it??). There could be a relationship between these parameters and the success of a movie in the box office.
-
-    ![image](https://github.com/user-attachments/assets/f67cf198-7561-4816-bfb9-c9a05a7018a0)
-*   **movie_akas**: This table shows other movie features e.g. the region, language, type and attributes. There could be a relationship between these features and the success of a movie in the box office.
-    ![image](https://github.com/user-attachments/assets/b0070954-a043-40bc-9291-73a28be69b40)
+# Data Cleaning
+The data was checked for missing values and duplicates.
 
 # **Exploratory Data Analysis**
 
-We used Tableau to explore the data and established the following insights:
+Python, Tableau and MS Excel were used to explore and gather insights from the data:
 
+
+  <div align="center">
+        <img src="pictures/customer_distribution_per_state.png" alt="customer_distribution_per_state" width="800">
+        <p><em>customer_distribution_per_state</em></p>
+    </div>
 
 1. **Average Rating Per Genre:**
 
