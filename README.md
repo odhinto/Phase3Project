@@ -53,69 +53,25 @@ The data was checked for missing values and duplicates.
 
 Python, Tableau and MS Excel were used to explore and gather insights from the data:
 
-
   <div align="center">
         <img src="pictures/customer_distribution_per_state.png" alt="customer_distribution_per_state" width="800">
-        <p><em>customer_distribution_per_state</em></p>
+        <p><em>Customer Distribution Per State</em></p>
     </div>
 
-1. **Average Rating Per Genre:**
+The customers appear to be evenly distributed across all the states in USA.
 
-   Musical, Fantastical and Sci-Fi Genres registered the highest incidence among the top rated genres
-    <div align="center">
-        <img src="pictures/Average Rating By Genre.png" alt="average rating by genre" width="800">
-        <p><em>Average Rating By Genre</em></p>
-    </div>
-2. **Popularity by Genre:**
-
-    Fantasy, Action and Adventure Genres Feature Frequently on the Popularity Meter
-    <div align="center">
-        <img src="pictures/Popularity by Genre.png" alt="popularity by genre" width="800">
-        <p><em>Popularity By Genre</em></p>
+  <div align="center">
+        <img src="pictures/Account_Length_distribution.png" alt="Account_Length_distribution" width="300">
+        <p><em>Account Length Distribution in Days</em></p>
     </div>
 
-3. **Average Profitability by Gentre:**
+ There appears to be normal distribution of the account length 
 
-    Family, Horrors and Thrillers Register High Profitability i.e. profitability = (grossing/production budget) x 100%
-   <div align="center">
-        <img src="pictures/Average Profitability by Genre.png" alt="average profitability by genre" width="800">
-        <p><em>Average Profitability By Genre</em></p>
+
+ <div align="center">
+        <img src="pictures/Customer_service_calls.png" alt="Customer_service_calls" width="800">
+        <p><em>Custome Service Calls</em></p>
     </div>
-
-4. **Casting Insights:**
-
-    The following are the highest grossing **actors** who consistently attract larger audiences:
-    <div align="center">
-        <img src="pictures/actors.PNG" alt="highest grossing actors" width="800">
-        <p><em>Highest Grossing Actors</em></p>
-    </div>
-
-     The following are the highest grossing **actresses** who consistently attract larger audiences:
-    <div align="center">
-        <img src="pictures/actresses.PNG" alt="highest grossing actresses" width="800">
-        <p><em>Highest Grossing Actresses</em></p>
-    </div>
-
-     The following are the highest grossing **directors** who consistently attract larger audiences:
-    <div align="center">
-        <img src="pictures/directors.PNG" alt="image3" width="800">
-        <p><em>Highest Grossing Directors</em></p>
-    </div>
-
-     The following are the highest grossing **producers** who consistently attract larger audiences:
-    <div align="center">
-        <img src="pictures/producers.PNG" alt="image2" width="800">
-        <p><em>Highest Grossing Producers</em></p>
-    </div>
-
-    The following are the highest grossing **writers** who consistently attract larger audiences:
-    <div align="center">
-        <img src="pictures/writers.PNG" alt="image1" width="800">
-        <p><em>Highest Grossing Writers</em></p>
-    </div>
-5. **Average Production Budget vs Average Profitability by Genre:**
-
-  
 
 # **Conclusion**
 
