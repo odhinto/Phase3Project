@@ -218,6 +218,30 @@ The Baseline Random Forest Model produced the highest Recall results
     </div>
 
 The Baseline Random Forest Model produced the highest AUC_ROC results
+
+From these findings, it is evident that the Random Forest Technique yields the best performance across the board. We can therefore proceed with Random Forest Classification going forward.
+
+For the Baseline Random Forest Model, the performance metrics are as follows:
+
+* **Accuracy**: 0.9430284857571214
+* **Recall**: 0.6804123711340206
+* **Precision**: 0.9041095890410958
+* **F1-score**: 0.7764705882352941
+
+We therefore decide apply more effort in the Baseline feature selection to enhance performance. For a start, we randomly select 10 features 100 times and evaluate the performance of the Random Forest Model each time. This will help us determine if their is an optimal combination of features that can enhance the prediction metrics further. With more computing power, we can increase the number of combination simulations.
+
+The following feature combination yielded the best performance metrics (i.e. top in Accuracy, Recall, F1_Score and AUC-ROC SCore):
+
+X = ['total night charge', 'total intl charge', 'voice mail plan', 'total eve minutes', 'total eve charge', 'total day charge', 'total night calls', 'total intl calls', 'customer service calls', 'international plan']
+
+The performance metrics improved to:
+
+* **Accuracy**: 0.950525
+* **Recall**: 0.711340
+* **Precision**: 0.932432
+* **F1-score**: 0.807018
+
+
 # **Conclusion**
 
 1. **Genre Focus:**
