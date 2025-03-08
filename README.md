@@ -76,7 +76,7 @@ There is high likelihood that a customer who makes more than 1 customer service 
 
 
  <div align="center">
-        <img src="pictures/International_Plan_vs_Churn_Rate.png" alt="International_Plan_vs_Churn_Rate" width="100">
+        <img src="pictures/International_Plan_vs_Churn_Rate.png" alt="International_Plan_vs_Churn_Rate" width="800">
         <p><em>International Plan vs Churn Rate</em></p>
     </div>
 
