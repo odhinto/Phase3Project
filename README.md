@@ -184,21 +184,21 @@ To also explore the effect of different feature combinations in the model perfor
 This yielded the following performance metrics:
 
 <div align="center">
-        <img src="pictures/accuracy.png" alt="accuracy" width="800">
+        <img src="pictures/accuracy.PNG" alt="accuracy" width="800">
         <p><em>Performance Metrics Sorted In Descending Order of Accracy</em></p>
     </div>
 
 The baseline Random Forest Model produced the highest Accuracy results
 
 <div align="center">
-        <img src="pictures/precision.png" alt="precision" width="800">
+        <img src="pictures/precision.PNG" alt="precision" width="800">
         <p><em>Performance Metrics Sorted In Descending Order of Precision</em></p>
     </div>
 
 The Engineered Random Forest Model produced the highest Precision results
 
 <div align="center">
-        <img src="pictures/recall.png" alt="recall" width="800">
+        <img src="pictures/recall.PNG" alt="recall" width="800">
         <p><em>Performance Metrics Sorted In Descending Order of Recall</em></p>
     </div>
 
@@ -206,14 +206,14 @@ The Engineered-Only Decision Tree Model produced the highest Recall results
 
 
 <div align="center">
-        <img src="pictures/fi_score.png" alt="fi_score" width="800">
+        <img src="pictures/fi_score.PNG" alt="fi_score" width="800">
         <p><em>Performance Metrics Sorted In Descending Order of F1 Score</em></p>
     </div>
 
 The Baseline Random Forest Model produced the highest Recall results
 
 <div align="center">
-        <img src="pictures/auc_roc.png" alt="auc_roc" width="800">
+        <img src="pictures/auc_roc.PNG" alt="auc_roc" width="800">
         <p><em>Performance Metrics Sorted In Descending Order of AUC_ROC Score</em></p>
     </div>
 
