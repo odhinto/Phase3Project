@@ -1,24 +1,20 @@
-<h1 align="center">Hi 👋, We're Group 6</h1>
+<h1 align="center">Hi 👋, I;m Anthony Odhiambo  </h1>
 
-Github Repository: [Click to Open the Project Github Repository](https://github.com/odhinto/Phase2-Group6-Project.git)
+Github Repository: [Click to Open the Project Github Repository](https://github.com/odhinto/Phase3Project.git)
 
 Tableau Dashboard: [Click to Open the Tableau Dashboard](https://public.tableau.com/views/MovieData_17378656876300/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
-# **Problem Definition**
+# **Data Understanding**
 
-A recent profitable trend across most big companies is creation of original video content. Our company's expansion and diversification plans include getting in on this fun by creating a new movie studio. 
-An analysis of box office performance is critical to identify a profitable formula for operating a profitable studio.
+Like most telecommunication companies, customer retention remains a critical challenge for SyriaTel. This is because as acquiring new customers is often more expensive than keeping existing ones. SyriaTel is experiencing customer churn where users discontinue their service. Identifying the patterns and factors that drive churn can help the company take proactive measures to reduce customer loss, enhance loyalty, and increase revenue.
 
 ## Business Understanding
 
-The primary objective of this exercise is to generate an accurate model for predicting box office success as a blueprint for running our proposed new movie studio
+The primary objective of this exercise is to leverage historical customer data with an aim to uncover key factors that predict churn
 
-*   The highest rated movies with respect to attributes such as Genre, Region, Writers, Directors, Actors etc.
-*   The most watched/voted movies with respect to attributes such as Genre, Region, Writers, Directors, Actors etc.
-*   The highest grossing movies with respect to attributes such as Genre, Region, Writers, Directors, Actors etc.
-
-The insights from this analysis will determine the kind of movies our studio focuses on and the people we approach to partner with us to ensure our studio is successful and profitable.
+* Build a predictive model that accurately identifies customers at risk of churning
+* Optimize model performance using feature engineering and tuning.
 
 # **Data Preprocessing**
 
