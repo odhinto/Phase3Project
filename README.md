@@ -51,7 +51,29 @@ The data was checked for missing values and duplicates.
 
 # **Exploratory Data Analysis**
 
-Python, Tableau and MS Excel were used to explore and gather insights from the data:
+Python, Tableau and MS Excel were used to explore and gather insights from the data. Feature Engineering was used to try and make better sense of the data.
+**Feature Engineering**:
+
+* Total Minutes = total day minutes + total eve minutes + total night minutes
+* Total Calls = total day calls + total eve calls + total night calls
+* Avg Call Minutes Per Day = total minutes / total calls
+* Avg Day Call Minutes Per Day = total day minutes / total day calls
+* Avg Eve Call Minutes Per Day = total eve minutes / total eve calls
+* Avg Night Call Minutes Per Day = total night minutes / total night calls
+* Avg Intl Call Minutes Per Day = total intl minutes / total intl calls
+* Day Call Ratio = total day calls / total calls
+* Eve Call Ratio = total eve calls / total calls
+* Night Call Ratio = total night calls / total calls
+* Intl Call Ratio = total intl calls / total calls
+* Vmail Ratio = number vmail messages / total calls
+* Day Minutes Ratio = total day minutes / total minutes
+* Eve Minutes Ratio = total eve minutes / total minutes
+* Night Minutes Ratio = total night minutes / total minutes
+* Intl Minutes Ratio = total intl minutes / total minutes
+* Customer Service Call Intensity = customer service calls / account length
+* Customer Service Calls Ratio = customer service calls / total calls
+
+
 
   <div align="center">
         <img src="pictures/customer_distribution_per_state.png" alt="customer_distribution_per_state" width="800">
@@ -111,9 +133,12 @@ Despite call lengths being shorter during the day, corresponding call charges ar
 
 On average, the number of calls a customer makes per day is inversely proportional to the average duration of calls the customer makes
 
+  <div align="center">
+        <img src="pictures/pairplot.png" alt="pairplot" width="800">
+        <p><em>Bivariate Analysis</em></p>
+    </div>
 
-
-
+There seems to be 1:1 relationships between call charges and call minutes.
 
 
 
