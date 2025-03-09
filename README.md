@@ -2,7 +2,7 @@
 
 Github Repository: [Click to Open the Project Github Repository](https://github.com/odhinto/Phase3Project.git)
 
-Tableau Dashboard: [Click to Open the Tableau Dashboard](https://public.tableau.com/views/MovieData_17378656876300/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Tableau Dashboard: [Click to Open the Tableau Dashboard](https://public.tableau.com/views/Churn_17414751223480/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 # **Data Understanding**
@@ -251,3 +251,4 @@ The best performing model was the tuned Random forest model with 98.9 % recall a
 
 * The recall is still a bit low. Other classification techniques e.g. XGBoost Classification could be attempted to yield better model performance.
 * More descriptive features could improve model performance e.g. **Customer Service Calls Reasons** or **Subscription Tariff**
+* Other ML techniques like SMOTE can be used to handle the data imbalance and subsequently enhance recall
