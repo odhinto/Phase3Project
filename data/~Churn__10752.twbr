@@ -932,7 +932,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true'><![CDATA[<Sheet Name> vs International Plan]]></run>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -947,10 +947,8 @@
             </column>
             <column caption='Churn' datatype='boolean' name='[churn]' role='dimension' type='nominal' />
             <column caption='Customer Service Calls' datatype='integer' name='[customer service calls]' role='measure' type='quantitative' />
-            <column caption='International Plan' datatype='string' name='[international plan]' role='dimension' type='nominal' />
             <column-instance column='[Customer Service Calls (bin)]' derivation='None' name='[none:Customer Service Calls (bin):qk]' pivot='key' type='quantitative' />
             <column-instance column='[churn]' derivation='None' name='[none:churn:nk]' pivot='key' type='nominal' />
-            <column-instance column='[international plan]' derivation='None' name='[none:international plan:nk]' pivot='key' type='nominal' />
             <column-instance column='[churn]' derivation='Count' name='[pcto:cnt:churn:qk:2]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Columns' type='PctTotal' />
             </column-instance>
@@ -981,7 +979,7 @@
           </pane>
         </panes>
         <rows>[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:customer service calls:qk]</rows>
-        <cols>([federated.077ws4m0054esf1buaeig1timkuu].[none:international plan:nk] * [federated.077ws4m0054esf1buaeig1timkuu].[none:Customer Service Calls (bin):qk])</cols>
+        <cols>[federated.077ws4m0054esf1buaeig1timkuu].[none:Customer Service Calls (bin):qk]</cols>
         <show-full-range>
           <column>[federated.077ws4m0054esf1buaeig1timkuu].[none:Customer Service Calls (bin):qk]</column>
         </show-full-range>
@@ -1734,7 +1732,7 @@
       </cards>
       <simple-id uuid='{F205EAD5-9607-45A5-BADD-1B14353708D8}' />
     </window>
-    <window class='worksheet' name='Churned vs Not Churned: International Plan'>
+    <window class='worksheet' maximized='true' name='Churned vs Not Churned: International Plan'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1762,7 +1760,7 @@
       </cards>
       <simple-id uuid='{D6AE11CC-5760-4A9D-874E-9A8BD39310C7}' />
     </window>
-    <window class='worksheet' maximized='true' name='Churn Distribution: Customer Service Calls'>
+    <window class='worksheet' name='Churn Distribution: Customer Service Calls'>
       <cards>
         <edge name='left'>
           <strip size='160'>
