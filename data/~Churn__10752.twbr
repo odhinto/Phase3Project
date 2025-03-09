@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20243.24.1010.1014                               -->
-<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -9,13 +9,16 @@
     <MapboxVectorStylesAndLayers />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
     <ObjectModelTableType />
     <SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='Churn_17414751223480' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -25,7 +28,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='churn' name='textscan.08b16a81tujb8b1gb4tgg0yrg5m8'>
-            <connection class='textscan' directory='D:/Phase 3 Project/data' filename='churn.csv' password='' server='' />
+            <connection class='textscan' directory='D:/Phase 3 Project/data' filename='churn.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.08b16a81tujb8b1gb4tgg0yrg5m8' name='churn.csv' table='[churn#csv]' type='table'>
@@ -352,7 +355,7 @@
       <column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_FB7382A3A09947A3A07C3B98FB820128]' role='measure' type='quantitative' />
       <column caption='Account Length' datatype='integer' name='[account length]' role='measure' type='quantitative' />
       <column aggregation='Sum' caption='Area Code' datatype='integer' default-format='*000' name='[area code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
-      <column datatype='integer' name='[avg call time (bin)]' role='dimension' type='quantitative'>
+      <column aggregation='None' datatype='integer' name='[avg call time (bin)]' role='dimension' type='quantitative'>
         <calculation class='bin' decimals='-2' formula='[total calls (copy)_756604792284467203]' peg='0' size='0.066' />
       </column>
       <column caption='Churn' datatype='boolean' name='[churn]' role='dimension' type='nominal' />
@@ -361,7 +364,7 @@
       <column caption='Number Vmail Messages' datatype='integer' name='[number vmail messages]' role='measure' type='quantitative' />
       <column caption='Phone Number' datatype='string' name='[phone number]' role='dimension' type='nominal' />
       <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='integer' name='[total calls (bin)]' role='dimension' type='quantitative'>
+      <column aggregation='None' datatype='integer' name='[total calls (bin)]' role='dimension' type='quantitative'>
         <calculation class='bin' decimals='1' formula='[Calculation_756604792276217856]' peg='0' size='11' />
       </column>
       <column caption='total minutes' datatype='real' name='[total calls (copy)_756604792276533249]' role='measure' type='quantitative'>
@@ -392,6 +395,290 @@
         </table-calc>
       </column-instance>
       <column-instance column='[total day calls]' derivation='Sum' name='[sum:total day calls:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/hp/Documents/My Tableau Repository/Datasources/churn.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>account length</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[account length]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>account length</remote-alias>
+              <ordinal>1</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>area code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[area code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>area code</remote-alias>
+              <ordinal>2</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>phone number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[phone number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>phone number</remote-alias>
+              <ordinal>3</ordinal>
+              <family>churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3333</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>international plan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[international plan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>international plan</remote-alias>
+              <ordinal>4</ordinal>
+              <family>churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>voice mail plan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[voice mail plan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>voice mail plan</remote-alias>
+              <ordinal>5</ordinal>
+              <family>churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number vmail messages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number vmail messages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number vmail messages</remote-alias>
+              <ordinal>6</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total day minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total day minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total day minutes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1291</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total day calls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total day calls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total day calls</remote-alias>
+              <ordinal>8</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total day charge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total day charge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total day charge</remote-alias>
+              <ordinal>9</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1291</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total eve minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total eve minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total eve minutes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1307</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total eve calls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total eve calls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total eve calls</remote-alias>
+              <ordinal>11</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total eve charge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total eve charge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total eve charge</remote-alias>
+              <ordinal>12</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1210</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total night minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total night minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total night minutes</remote-alias>
+              <ordinal>13</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1258</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total night calls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total night calls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total night calls</remote-alias>
+              <ordinal>14</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total night charge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total night charge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total night charge</remote-alias>
+              <ordinal>15</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>856</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total intl minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total intl minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total intl minutes</remote-alias>
+              <ordinal>16</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total intl calls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total intl calls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total intl calls</remote-alias>
+              <ordinal>17</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total intl charge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total intl charge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total intl charge</remote-alias>
+              <ordinal>18</ordinal>
+              <family>churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer service calls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customer service calls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer service calls</remote-alias>
+              <ordinal>19</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>churn.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -443,6 +730,9 @@
                   <column datatype='boolean' name='churn' ordinal='20' />
                 </columns>
               </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -638,6 +928,67 @@
       </table>
       <simple-id uuid='{3585B7C1-BE93-4AA1-ADE9-C0C7ECC2836E}' />
     </worksheet>
+    <worksheet name='Churn Distribution: Customer Service Calls'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'><![CDATA[<Sheet Name> vs International Plan]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.077ws4m0054esf1buaeig1timkuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.077ws4m0054esf1buaeig1timkuu'>
+            <column aggregation='None' datatype='integer' name='[Customer Service Calls (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[customer service calls]' peg='0' size='1.424' />
+            </column>
+            <column caption='Churn' datatype='boolean' name='[churn]' role='dimension' type='nominal' />
+            <column caption='Customer Service Calls' datatype='integer' name='[customer service calls]' role='measure' type='quantitative' />
+            <column caption='International Plan' datatype='string' name='[international plan]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Service Calls (bin)]' derivation='None' name='[none:Customer Service Calls (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[churn]' derivation='None' name='[none:churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[international plan]' derivation='None' name='[none:international plan:nk]' pivot='key' type='nominal' />
+            <column-instance column='[churn]' derivation='Count' name='[pcto:cnt:churn:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[customer service calls]' derivation='Count' name='[pcto:cnt:customer service calls:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.077ws4m0054esf1buaeig1timkuu].[none:churn:nk]' />
+              <text column='[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:churn:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:customer service calls:qk]</rows>
+        <cols>([federated.077ws4m0054esf1buaeig1timkuu].[none:international plan:nk] * [federated.077ws4m0054esf1buaeig1timkuu].[none:Customer Service Calls (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.077ws4m0054esf1buaeig1timkuu].[none:Customer Service Calls (bin):qk]</column>
+        </show-full-range>
+        <percentages enabled='true' mode='column' />
+      </table>
+      <simple-id uuid='{184A8CCA-1244-4983-AE33-9461475DCBBD}' />
+    </worksheet>
     <worksheet name='Churn Percentage vs Customer Service Calls Distribution'>
       <table>
         <view>
@@ -738,11 +1089,61 @@
       </table>
       <simple-id uuid='{C0318904-F619-4DEE-91BD-91857BA88CE4}' />
     </worksheet>
-    <worksheet name='Churned vs Not Churned Percentage'>
+    <worksheet name='Churned vs Not Churned: International Plan'>
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true'><![CDATA[<Sheet Name>: The data is imbalanced i.e. ration of Not Churned to Churned is Large]]></run>
+            <run bold='true'><![CDATA[<Sheet Name> vs International Plan]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.077ws4m0054esf1buaeig1timkuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.077ws4m0054esf1buaeig1timkuu'>
+            <column caption='Churn' datatype='boolean' name='[churn]' role='dimension' type='nominal' />
+            <column caption='International Plan' datatype='string' name='[international plan]' role='dimension' type='nominal' />
+            <column-instance column='[churn]' derivation='None' name='[none:churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[international plan]' derivation='None' name='[none:international plan:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phone number]' derivation='Count' name='[pcto:cnt:phone number:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Phone Number' datatype='string' name='[phone number]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.077ws4m0054esf1buaeig1timkuu].[none:international plan:nk]' />
+              <text column='[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:phone number:qk:6]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.077ws4m0054esf1buaeig1timkuu].[none:churn:nk]</rows>
+        <cols>[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:phone number:qk:6]</cols>
+        <percentages enabled='true' mode='row' />
+      </table>
+      <simple-id uuid='{DE69DCB5-F582-45A3-80C6-13432994D3AD}' />
+    </worksheet>
+    <worksheet name='Churned vs Not Churned: Total'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'><![CDATA[<Sheet Name> vs International Plan]]></run>
           </formatted-text>
         </title>
       </layout-options>
@@ -770,14 +1171,21 @@
             <mark class='Automatic' />
             <encodings>
               <color column='[federated.077ws4m0054esf1buaeig1timkuu].[none:churn:nk]' />
+              <text column='[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:phone number:qk:2]' />
             </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[federated.077ws4m0054esf1buaeig1timkuu].[none:churn:nk]</rows>
         <cols>[federated.077ws4m0054esf1buaeig1timkuu].[pcto:cnt:phone number:qk:2]</cols>
         <percentages enabled='true' mode='table' />
       </table>
-      <simple-id uuid='{DE69DCB5-F582-45A3-80C6-13432994D3AD}' />
+      <simple-id uuid='{686777AC-B5F4-4571-B392-96DC6512375F}' />
     </worksheet>
     <worksheet name='Customer Distribution Per State'>
       <layout-options>
@@ -978,7 +1386,7 @@
             <column-instance column='[Calculation_756604792276217856]' derivation='Count' name='[cnt:Calculation_756604792276217856:qk]' pivot='key' type='quantitative' />
             <column-instance column='[churn]' derivation='None' name='[none:churn:nk]' pivot='key' type='nominal' />
             <column-instance column='[total calls (bin)]' derivation='None' name='[none:total calls (bin):qk]' pivot='key' type='quantitative' />
-            <column datatype='integer' name='[total calls (bin)]' role='dimension' type='quantitative'>
+            <column aggregation='None' datatype='integer' name='[total calls (bin)]' role='dimension' type='quantitative'>
               <calculation class='bin' decimals='1' formula='[Calculation_756604792276217856]' peg='0' size='11' />
             </column>
             <column caption='Total Day Calls' datatype='integer' name='[total day calls]' role='measure' type='quantitative' />
@@ -1073,7 +1481,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='24479' id='13' name='Churned vs Not Churned Percentage' w='49415' x='49999' y='50000'>
+              <zone h='24479' id='13' name='Churned vs Not Churned: International Plan' w='49415' x='49999' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1111,8 +1519,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='16' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='18' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='13151' id='11' name='Customer Distribution Per State' param='[federated.077ws4m0054esf1buaeig1timkuu].[avg:total day minutes:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='13288' x='36711' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1177,7 +1585,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='180' h='24479' id='13' is-fixed='true' name='Churned vs Not Churned Percentage' w='49415' x='49999' y='50000'>
+                <zone fixed-size='180' h='24479' id='13' is-fixed='true' name='Churned vs Not Churned: International Plan' w='49415' x='49999' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1298,7 +1706,7 @@
       </viewpoint>
       <simple-id uuid='{B355FB20-C7E9-4ED4-A90B-048CA4C1F4DE}' />
     </window>
-    <window class='worksheet' name='Churned vs Not Churned Percentage'>
+    <window class='worksheet' name='Churned vs Not Churned: Total'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1324,7 +1732,63 @@
           </strip>
         </edge>
       </cards>
+      <simple-id uuid='{F205EAD5-9607-45A5-BADD-1B14353708D8}' />
+    </window>
+    <window class='worksheet' name='Churned vs Not Churned: International Plan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.077ws4m0054esf1buaeig1timkuu].[none:international plan:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
       <simple-id uuid='{D6AE11CC-5760-4A9D-874E-9A8BD39310C7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Churn Distribution: Customer Service Calls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.077ws4m0054esf1buaeig1timkuu].[none:churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E678CB1-7D41-493B-99D9-1F3A6F65075C}' />
     </window>
     <window class='worksheet' name='International Plan vs Churn Rate'>
       <cards>
@@ -1484,7 +1948,7 @@
       </cards>
       <simple-id uuid='{EE22754A-34D7-4B49-B0E4-466846B15B3F}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Account Length Distribution'>
           <zoom type='entire-view' />
@@ -1492,7 +1956,7 @@
         <viewpoint name='Churn Percentage vs Customer Service Calls Distribution'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Churned vs Not Churned Percentage' />
+        <viewpoint name='Churned vs Not Churned: International Plan' />
         <viewpoint name='Customer Distribution Per State'>
           <zoom type='entire-view' />
         </viewpoint>

@@ -53,6 +53,14 @@ The data was checked for missing values and duplicates.
 
 Python, Tableau and MS Excel were used to explore and gather insights from the data.
 
+  <div align="center">
+        <img src="pictures/churnvscustomerservicecalls.png" alt="churnvscustomerservicecalls" width="800">
+        <p><em>Customer Churn vs Customer Service Calls</em></p>
+    </div>
+
+The churn rate at SyriaTel is 14.49%. On average, churned customers made more than 2 customer service calls, whereas the ones that were retained made less than 2 customer service calls.
+
+Churn probability increases drammatically as the number of customer service calls increases.
 
 
   <div align="center">
