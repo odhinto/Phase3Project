@@ -219,6 +219,8 @@ The Baseline Random Forest Model produced the highest Recall results
 
 The Baseline Random Forest Model produced the highest AUC_ROC results
 
+
+## Model evaluation
 From these findings, it is evident that the Random Forest Technique yields the best performance across the board. We can therefore proceed with Random Forest Classification going forward.
 
 For the Baseline Random Forest Model, the performance metrics are as follows:
@@ -240,14 +242,8 @@ The performance metrics improved to:
 * **Recall**: 0.711340
 * **Precision**: 0.932432
 * **F1-score**: 0.807018
-
-
-## Model evaluation
-
-The best performing model was the tuned Random forest model with 98.9 % recall and accuracy = ....? The best paramaters after tuning for the best model is min_sample split = 4. etc
-
-    
-# **Recommendation**
+ 
+## **Recommendation**
 
 * The recall is still a bit low. Other classification techniques e.g. XGBoost Classification could be attempted to yield better model performance.
 * More descriptive features could improve model performance e.g. **Customer Service Calls Reasons** or **Subscription Tariff**
