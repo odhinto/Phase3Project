@@ -90,7 +90,7 @@ There is high likelihood that a customer who makes more than 1 customer service 
         <p><em>International Plan vs Churn Rate</em></p>
     </div>
 
-The churn probability for customers with international plan appears high owing to the fact that for cutomers who have international plan, the ratio of churn to not churn is almost 1.
+The churn probability for customers with international plan is higher than those for those without international plan.
 
  <div align="center">
         <img src="pictures/call_time_description.png" alt="call_time_description" width="800">
